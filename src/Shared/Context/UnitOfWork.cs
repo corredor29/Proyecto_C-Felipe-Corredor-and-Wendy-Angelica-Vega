@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using GestionVuelos.Shared.Contracts;
 
 // Importamos las implementaciones de los repositorios
-using GestionVuelos.src.Modules.Paises.Infrastructure.Repository;
+using Gestion_Vuelos.src.Modules.Paises.Infrastructure.Repository;
 using GestionVuelos.src.Modules.Ciudades.Infrastructure.Repository;
-using GestionVuelos.src.Modules.Aerolineas.Infrastructure.Repository;
+using Gestionvuelos.src.Modules.Aerolineas.Infrastructure.Repository;
 using GestionVuelos.src.Modules.Aeropuerto.Infrastructure.Repository;
 using GestionVuelos.src.Modules.Clientes.Infrastructure.Repository;
 using GestionVuelos.src.Modules.ClienteEmails.Infrastructure.Repository;
