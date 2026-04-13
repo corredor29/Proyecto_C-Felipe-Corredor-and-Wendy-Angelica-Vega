@@ -1,15 +1,15 @@
 using System;
 using System.Threading.Tasks;
 // Importamos los namespaces de las interfaces de repositorios
-using GestionVuelos.Modules.Paises.Domain.Interfaces;
-using GestionVuelos.Modules.Ciudades.Domain.Interfaces;
-using GestionVuelos.Modules.Aerolineas.Domain.Interfaces;
-using GestionVuelos.Modules.Aeropuertos.Domain.Interfaces;
-using GestionVuelos.Modules.Clientes.Domain.Interfaces;
-using GestionVuelos.Modules.Vuelos.Domain.Interfaces;
-using GestionVuelos.Modules.Reservas.Domain.Interfaces;
-using GestionVuelos.Modules.Pagos.Domain.Interfaces;
-using GestionVuelos.Modules.Usuarios.Domain.Interfaces;
+using GestionVuelos.src.Modules.Paises.Domain.Interfaces;
+using GestionVuelos.src.Modules.Ciudades.Domain.Interfaces;
+using GestionVuelos.src.Modules.Aerolineas.Domain.Interfaces;
+using GestionVuelos.src.Modules.Aeropuertos.Domain.Interfaces;
+using GestionVuelos.src.Modules.Clientes.Domain.Interfaces;
+using GestionVuelos.src.Modules.Vuelos.Domain.Interfaces;
+using GestionVuelos.src.Modules.Reservas.Domain.Interfaces;
+using GestionVuelos.src.Modules.Pagos.Domain.Interfaces;
+using GestionVuelos.src.Modules.Usuarios.Domain.Interfaces;
 
 namespace GestionVuelos.Shared.Contracts;
 

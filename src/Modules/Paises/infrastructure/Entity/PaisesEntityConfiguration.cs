@@ -2,7 +2,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Gestion_vuelos.src.Modules.Paises.infrastructure.Entity;
+namespace Gestion_vuelos.src.src.Modules.Paises.infrastructure.Entity;
 
 public class PaisesEntityConfiguration : IEntityTypeConfiguration<PaisesEntity>
 {

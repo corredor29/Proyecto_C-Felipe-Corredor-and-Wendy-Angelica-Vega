@@ -1,6 +1,6 @@
 using System;
 
-namespace Gestion_vuelos.src.Modules.Paises.infrastructure.Repository;
+namespace Gestion_vuelos.src.src.Modules.Paises.infrastructure.Repository;
 
 public class PaisesRepository
 {

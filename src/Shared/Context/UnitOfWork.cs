@@ -3,27 +3,27 @@ using System.Threading.Tasks;
 using GestionVuelos.Shared.Contracts;
 
 // Importamos las implementaciones de los repositorios
-using GestionVuelos.Modules.Paises.Infrastructure.Repository;
-using GestionVuelos.Modules.Ciudades.Infrastructure.Repository;
-using GestionVuelos.Modules.Aerolineas.Infrastructure.Repository;
-using GestionVuelos.Modules.Aeropuerto.Infrastructure.Repository;
-using GestionVuelos.Modules.Clientes.Infrastructure.Repository;
-using GestionVuelos.Modules.ClienteEmails.Infrastructure.Repository;
-using GestionVuelos.Modules.ClienteTelefonos.Infrastructure.Repository;
-using GestionVuelos.Modules.Vuelos.Infrastructure.Repository;
-using GestionVuelos.Modules.AsientosVuelos.Infrastructure.Repository;
-using GestionVuelos.Modules.EstadoVuelo.Infrastructure.Repository;
-using GestionVuelos.Modules.Reservas.Infrastructure.Repository;
-using GestionVuelos.Modules.Pasajeros.Infrastructure.Repository;
-using GestionVuelos.Modules.ReservasPasajeros.Infrastructure.Repository;
-using GestionVuelos.Modules.Tiquete.Infrastructure.Repository;
-using GestionVuelos.Modules.Pagos.Infrastructure.Repository;
-using GestionVuelos.Modules.MetodosPago.Infrastructure.Repository;
-using GestionVuelos.Modules.Usuario.Infrastructure.Repository;
-using GestionVuelos.Modules.UsuarioRol.Infrastructure.Repository;
-using GestionVuelos.Modules.TipoDocumento.Infrastructure.Repository;
-using GestionVuelos.Modules.Roles.Infrastructure.Repository;
-using GestionVuelos.Modules.EstadoTiquete.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Paises.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Ciudades.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Aerolineas.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Aeropuerto.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Clientes.Infrastructure.Repository;
+using GestionVuelos.src.Modules.ClienteEmails.Infrastructure.Repository;
+using GestionVuelos.src.Modules.ClienteTelefonos.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Vuelos.Infrastructure.Repository;
+using GestionVuelos.src.Modules.AsientosVuelos.Infrastructure.Repository;
+using GestionVuelos.src.Modules.EstadoVuelo.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Reservas.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Pasajeros.Infrastructure.Repository;
+using GestionVuelos.src.Modules.ReservasPasajeros.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Tiquete.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Pagos.Infrastructure.Repository;
+using GestionVuelos.src.Modules.MetodosPago.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Usuario.Infrastructure.Repository;
+using GestionVuelos.src.Modules.UsuarioRol.Infrastructure.Repository;
+using GestionVuelos.src.Modules.TipoDocumento.Infrastructure.Repository;
+using GestionVuelos.src.Modules.Roles.Infrastructure.Repository;
+using GestionVuelos.src.Modules.EstadoTiquete.Infrastructure.Repository;
 
 namespace GestionVuelos.Shared.Context;
 
