@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Gestion_vuelos.src.Modules.Paises.infrastructure.Entity;
+     /*
 using Gestion_vuelos.src.Modules.Ciudades.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.TipoDocumento.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.Roles.infrastructure.Entity;
@@ -44,16 +45,18 @@ using Gestion_vuelos.src.Modules.MetodoPago.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.Pago.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.Usuario.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.UsuarioRol.infrastructure.Entity;
+*/
 
-
-namespace Gestion_vuelos.Shared.Context;
+namespace Gestion_vuelos.src.Shared.Context;
 
 public class AppDbContext : DbContext
 {
+    public DbSet<PaisesEntity> Paises { get; set; }
+
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-/*    // 1. Geografía y Maestros
-    public DbSet<Pais> Paises { get; set; }
+    /*    // 1. Geografía y Maestros
+
     public DbSet<Ciudad> Ciudades { get; set; }
     public DbSet<TipoDocumento> TiposDocumento { get; set; }
     public DbSet<Rol> Roles { get; set; }
