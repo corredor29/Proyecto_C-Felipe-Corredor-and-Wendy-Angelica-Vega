@@ -1,17 +1,17 @@
 using System;
 using System.Threading.Tasks;
 // Importamos los namespaces de las interfaces de repositorios
-using GestionVuelos.Models.Paises.Domain.Interfaces;
-using GestionVuelos.Models.Ciudades.Domain.Interfaces;
-using GestionVuelos.Models.Aerolineas.Domain.Interfaces;
-using GestionVuelos.Models.Aeropuertos.Domain.Interfaces;
-using GestionVuelos.Models.Clientes.Domain.Interfaces;
-using GestionVuelos.Models.Vuelos.Domain.Interfaces;
-using GestionVuelos.Models.Reservas.Domain.Interfaces;
-using GestionVuelos.Models.Pagos.Domain.Interfaces;
-using GestionVuelos.Models.Usuarios.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Paises.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Ciudades.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Aerolineas.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Aeropuertos.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Clientes.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Vuelos.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Reservas.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Pagos.Domain.Interfaces;
+using Gestion_vuelos.src.Modules.Usuarios.Domain.Interfaces;
 
-namespace GestionVuelos.Shared.Contracts;
+namespace Gestion_vuelos.Shared.Contracts;
 
 public interface IUnitOfWork : IDisposable
 {
