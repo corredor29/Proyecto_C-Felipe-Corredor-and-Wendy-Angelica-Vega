@@ -1,59 +1,62 @@
 using Microsoft.EntityFrameworkCore;
-using Gestion_vuelos.src.Modules.Paises.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Ciudades.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.TipoDocumento.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Roles.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Aerolineas.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Aeropuertos.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Clientes.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.DominioEmail.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.CodigoTelefono.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ClienteEmails.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ClienteTelefonos.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoVuelo.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Vuelos.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.AsientosVuelo.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Pasajero.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ReservaPasajero.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoTiquete.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Tiquete.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.TipoMedioPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.TipoTarjeta.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EmisorTarjeta.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.MetodoPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Pago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Usuario.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.UsuarioRol.Domain.Aggregate;                   
-using Gestion_vuelos.src.Modules.DominioEmail.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.CodigoTelefono.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ClienteEmails.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ClienteTelefonos.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoVuelo.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Vuelos.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.AsientosVuelo.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Pasajero.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.ReservaPasajero.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoTiquete.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Tiquete.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EstadoPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.TipoMedioPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.TipoTarjeta.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.EmisorTarjeta.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.MetodoPago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Pago.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.Usuario.Domain.Aggregate;
-using Gestion_vuelos.src.Modules.UsuarioRol.Domain.Aggregate;
+using Gestion_vuelos.src.Modules.Paises.infrastructure.Entity;
+     /*
+using Gestion_vuelos.src.Modules.Ciudades.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.TipoDocumento.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Roles.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Aerolineas.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Aeropuertos.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Clientes.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.DominioEmail.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.CodigoTelefono.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ClienteEmails.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ClienteTelefonos.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoVuelo.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Vuelos.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.AsientosVuelo.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Pasajero.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ReservaPasajero.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoTiquete.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Tiquete.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.TipoMedioPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.TipoTarjeta.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EmisorTarjeta.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.MetodoPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Pago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Usuario.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.UsuarioRol.infrastructure.Entity;                   
+using Gestion_vuelos.src.Modules.DominioEmail.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.CodigoTelefono.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ClienteEmails.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ClienteTelefonos.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoVuelo.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Vuelos.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.AsientosVuelo.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Pasajero.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.ReservaPasajero.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoTiquete.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Tiquete.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EstadoPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.TipoMedioPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.TipoTarjeta.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.EmisorTarjeta.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.MetodoPago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Pago.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.Usuario.infrastructure.Entity;
+using Gestion_vuelos.src.Modules.UsuarioRol.infrastructure.Entity;
+*/
 
-
-namespace Gestion_vuelos.Shared.Context;
+namespace Gestion_vuelos.src.Shared.Context;
 
 public class AppDbContext : DbContext
 {
+    public DbSet<PaisesEntity> Paises { get; set; }
+
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-/*    // 1. Geografía y Maestros
-    public DbSet<Pais> Paises { get; set; }
+    /*    // 1. Geografía y Maestros
+
     public DbSet<Ciudad> Ciudades { get; set; }
     public DbSet<TipoDocumento> TiposDocumento { get; set; }
     public DbSet<Rol> Roles { get; set; }
