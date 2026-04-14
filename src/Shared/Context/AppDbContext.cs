@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Gestion_vuelos.src.Modules.Paises.infrastructure.Entity;
-     /*
 using Gestion_vuelos.src.Modules.Ciudades.infrastructure.Entity;
+     /*
+
 using Gestion_vuelos.src.Modules.TipoDocumento.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.Roles.infrastructure.Entity;
 using Gestion_vuelos.src.Modules.Aerolineas.infrastructure.Entity;
@@ -52,6 +53,7 @@ namespace Gestion_vuelos.src.Shared.Context;
 public class AppDbContext : DbContext
 {
     public DbSet<PaisesEntity> Paises { get; set; }
+    public DbSet<CiudadesEntity> Ciudades {get; set;}
 
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
